@@ -1,4 +1,4 @@
-# Interfaces: Streamer
+# Streamer
 
 ## /* POST
 
