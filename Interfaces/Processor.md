@@ -8,14 +8,14 @@ Send page metadata, header, and body to a processor plugin, and receive extracte
 
 | Name            | Type    | Description                             |
 |-----------------|---------|-----------------------------------------|
-| `body`          | string  | page body (Base-64); e.g. HTML or image |
-| `header`        | object  | response HTTP header                    |
 | `meta.config`   | object? | processor config                        |
 | `meta.duration` | number? | request duration (ms)                   |
 | `meta.error`    | string? | error; e.g. `RobotDisallowed`           |
 | `meta.method`   | string  | request HTTP method                     |
 | `meta.status`   | number? | response HTTP status code               |
 | `meta.url`      | string  | page URL (absolute)                     |
+| `header`        | object  | response HTTP header                    |
+| `body`          | string  | page body (Base-64); e.g. HTML or image |
 
 ### Response parameters
 
