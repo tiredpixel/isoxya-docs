@@ -32,7 +32,7 @@ tag [crawler-html]:
 {
   "href": "/processor/17f17cef-6eb3-4bf4-bbf0-a3d729b3d650",
   "tag": "crawler-html",
-  "url": "http://isoxya-plugin-crawler-html.localhost:80/data"
+  "url": "http://isoxya-plugin-crawler-html.localhost/data"
 }
 ```
 
@@ -43,15 +43,15 @@ isoxya-api-create-streamer
 ```
 
 ```txt
-url [http://isoxya-plugin-elasticsearch.localhost/data]: 
-tag [elasticsearch]: 
+url [http://nginx-test-upstream.localhost]: 
+tag [nginx-test-upstream]: 
 ```
 
 ```json
 {
   "href": "/streamer/68e526ee-dd89-4a0e-932f-bf23825fabd0",
-  "tag": "elasticsearch",
-  "url": "http://isoxya-plugin-elasticsearch.localhost:80/data"
+  "tag": "nginx-test-upstream",
+  "url": "http://nginx-test-upstream.localhost"
 }
 ```
 
