@@ -31,47 +31,41 @@ content-type: application/json
 
 ```json
 {
-  "crwl": {
-    "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crwl/2021-01-26T11:46:21.411346Z",
-    "t_begin": "2021-01-26T11:46:21.411346Z"
+  "crawl": {
+    "began": "2021-12-03T10:59:54.064096684Z",
+    "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-03T10:59:54.064096684Z"
   },
-  "org": {
-    "href": "/org/1df9ee03-3c25-4ea6-9276-d4c7a58de332"
-  },
-  "t_retrieval": "2021-01-26T11:46:21.908809003Z",
   "data": {
-    "status": 200,
-    "method": "GET",
+    "duration": 205,
+    "error": null,
     "header": {
-      "Vary": "Accept-Encoding",
-      "Content-Type": "text/html; charset=UTF-8",
-      "Content-Encoding": "gzip",
-      "Etag": "\"3147526947\"",
-      "Expires": "Tue, 02 Feb 2021 11:46:21 GMT",
-      "Age": "425384",
-      "Last-Modified": "Thu, 17 Oct 2019 07:18:26 GMT",
-      "Date": "Tue, 26 Jan 2021 11:46:21 GMT",
-      "Server": "ECS (dcb/7F15)",
-      "Content-Length": "648",
-      "Cache-Control": "max-age=604800",
       "Accept-Ranges": "bytes",
+      "Age": "201579",
+      "Cache-Control": "max-age=604800",
+      "Content-Encoding": "gzip",
+      "Content-Length": "648",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Fri, 03 Dec 2021 10:59:54 GMT",
+      "Etag": "\"3147526947+gzip\"",
+      "Expires": "Fri, 10 Dec 2021 10:59:54 GMT",
+      "Last-Modified": "Thu, 17 Oct 2019 07:18:26 GMT",
+      "Server": "ECS (bsa/EB24)",
+      "Vary": "Accept-Encoding",
       "X-Cache": "HIT"
     },
-    "err": null,
-    "duration": {
-      "denominator": 250000000,
-      "numerator": 30304037
-    }
+    "method": "GET",
+    "status": 200
   },
-  "url": "http://example.com:80/",
-  "plug_proc": {
-    "tag": "crawler-html",
-    "href": "/plug_proc/76ce4d4a-a965-4ab4-9fae-2c375750cb0f"
+  "processor": {
+    "href": "/processor/17f17cef-6eb3-4bf4-bbf0-a3d729b3d650",
+    "tag": "crawler-html"
   },
+  "retrieved": "2021-12-03T10:59:54.188859267Z",
   "site": {
-    "url": "http://example.com:80",
-    "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw"
-  }
+    "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
+    "url": "http://example.com:80"
+  },
+  "url": "http://example.com:80/"
 }
 ```
 

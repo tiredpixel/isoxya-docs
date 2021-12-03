@@ -8,14 +8,14 @@ Send page metadata, header, and body to a processor plugin, and receive extracte
 
 | Name            | Type    | Description                             |
 |-----------------|---------|-----------------------------------------|
+| `body`          | string  | page body (Base-64); e.g. HTML or image |
+| `header`        | object  | response HTTP header                    |
 | `meta.config`   | object? | processor config                        |
 | `meta.duration` | number? | request duration (ms)                   |
 | `meta.error`    | string? | error; e.g. `RobotDisallowed`           |
 | `meta.method`   | string  | request HTTP method                     |
 | `meta.status`   | number? | response HTTP status code               |
 | `meta.url`      | string  | page URL (absolute)                     |
-| `header`        | object  | response HTTP header                    |
-| `body`          | string  | page body (Base-64); e.g. HTML or image |
 
 ### Response parameters
 
@@ -33,31 +33,29 @@ content-type: application/json
 
 ```json
 {
-  "body": "PCFkb2N0eXBlIGh0bWw+CjxodG1sPgo8aGVhZD4KICAgIDx0aXRsZT5FeGFtcGxlIERvbWFpbjwvdGl0bGU+CgogICAgPG1ldGEgY2hhcnNldD0idXRmLTgiIC8+CiAgICA8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LXR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIgLz4KICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSIgLz4KICAgIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CiAgICBib2R5IHsKICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjBmMGYyOwogICAgICAgIG1hcmdpbjogMDsKICAgICAgICBwYWRkaW5nOiAwOwogICAgICAgIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBzeXN0ZW0tdWksIEJsaW5rTWFjU3lzdGVtRm9udCwgIlNlZ29lIFVJIiwgIk9wZW4gU2FucyIsICJIZWx2ZXRpY2EgTmV1ZSIsIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWY7CiAgICAgICAgCiAgICB9CiAgICBkaXYgewogICAgICAgIHdpZHRoOiA2MDBweDsKICAgICAgICBtYXJnaW46IDVlbSBhdXRvOwogICAgICAgIHBhZGRpbmc6IDJlbTsKICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmRmZGZmOwogICAgICAgIGJvcmRlci1yYWRpdXM6IDAuNWVtOwogICAgICAgIGJveC1zaGFkb3c6IDJweCAzcHggN3B4IDJweCByZ2JhKDAsMCwwLDAuMDIpOwogICAgfQogICAgYTpsaW5rLCBhOnZpc2l0ZWQgewogICAgICAgIGNvbG9yOiAjMzg0ODhmOwogICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICAgIH0KICAgIEBtZWRpYSAobWF4LXdpZHRoOiA3MDBweCkgewogICAgICAgIGRpdiB7CiAgICAgICAgICAgIG1hcmdpbjogMCBhdXRvOwogICAgICAgICAgICB3aWR0aDogYXV0bzsKICAgICAgICB9CiAgICB9CiAgICA8L3N0eWxlPiAgICAKPC9oZWFkPgoKPGJvZHk+CjxkaXY+CiAgICA8aDE+RXhhbXBsZSBEb21haW48L2gxPgogICAgPHA+VGhpcyBkb21haW4gaXMgZm9yIHVzZSBpbiBpbGx1c3RyYXRpdmUgZXhhbXBsZXMgaW4gZG9jdW1lbnRzLiBZb3UgbWF5IHVzZSB0aGlzCiAgICBkb21haW4gaW4gbGl0ZXJhdHVyZSB3aXRob3V0IHByaW9yIGNvb3JkaW5hdGlvbiBvciBhc2tpbmcgZm9yIHBlcm1pc3Npb24uPC9wPgogICAgPHA+PGEgaHJlZj0iaHR0cHM6Ly93d3cuaWFuYS5vcmcvZG9tYWlucy9leGFtcGxlIj5Nb3JlIGluZm9ybWF0aW9uLi4uPC9hPjwvcD4KPC9kaXY+CjwvYm9keT4KPC9odG1sPgo=",
+  "body": "…",
   "header": {
-    "Vary": "Accept-Encoding",
-    "Content-Type": "text/html; charset=UTF-8",
-    "Content-Encoding": "gzip",
-    "Etag": "\"3147526947+gzip\"",
-    "Expires": "Tue, 02 Feb 2021 11:19:21 GMT",
-    "Age": "264946",
-    "Last-Modified": "Thu, 17 Oct 2019 07:18:26 GMT",
-    "Date": "Tue, 26 Jan 2021 11:19:21 GMT",
-    "Server": "ECS (dcb/7EC6)",
-    "Content-Length": "648",
+    "Accept-Ranges": "bytes",
+    "Age": "67245",
     "Cache-Control": "max-age=604800",
+    "Content-Encoding": "gzip",
+    "Content-Length": "648",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Fri, 03 Dec 2021 10:42:58 GMT",
+    "Etag": "\"3147526947\"",
+    "Expires": "Fri, 10 Dec 2021 10:42:58 GMT",
+    "Last-Modified": "Thu, 17 Oct 2019 07:18:26 GMT",
+    "Server": "ECS (bsa/EB1B)",
+    "Vary": "Accept-Encoding",
     "X-Cache": "HIT"
   },
   "meta": {
-    "status": 200,
     "config": null,
-    "url": "http://example.com:80/",
+    "duration": 103,
+    "error": null,
     "method": "GET",
-    "err": null,
-    "duration": {
-      "denominator": 1000000000,
-      "numerator": 119165427
-    }
+    "status": 200,
+    "url": "http://example.com:80/"
   }
 }
 ```
@@ -72,27 +70,25 @@ content-type: application/json
 ```json
 {
   "data": {
-    "status": 200,
-    "method": "GET",
+    "duration": 103,
+    "error": null,
     "header": {
-      "Vary": "Accept-Encoding",
-      "Content-Type": "text/html; charset=UTF-8",
-      "Content-Encoding": "gzip",
-      "Etag": "\"3147526947+gzip\"",
-      "Expires": "Tue, 02 Feb 2021 11:19:21 GMT",
-      "Age": "264946",
-      "Last-Modified": "Thu, 17 Oct 2019 07:18:26 GMT",
-      "Date": "Tue, 26 Jan 2021 11:19:21 GMT",
-      "Server": "ECS (dcb/7EC6)",
-      "Content-Length": "648",
+      "Accept-Ranges": "bytes",
+      "Age": "67245",
       "Cache-Control": "max-age=604800",
+      "Content-Encoding": "gzip",
+      "Content-Length": "648",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Fri, 03 Dec 2021 10:42:58 GMT",
+      "Etag": "\"3147526947\"",
+      "Expires": "Fri, 10 Dec 2021 10:42:58 GMT",
+      "Last-Modified": "Thu, 17Oct 2019 07:18:26 GMT",
+      "Server": "ECS (bsa/EB1B)",
+      "Vary": "Accept-Encoding",
       "X-Cache": "HIT"
     },
-    "err": null,
-    "duration": {
-      "denominator": 1000000000,
-      "numerator": 119165427
-    }
+    "method": "GET",
+    "status": 200
   },
   "urls": [
     "https://www.iana.org/domains/example"
