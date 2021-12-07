@@ -65,7 +65,6 @@ Response parameters are as for [/processor/:processor_id GET](#processorprocesso
 HTTP/1.1 200 OK
 content-type: application/json
 link: </processor>; rel="first", </processor?_next=2021-12-03T12:34:05.199Z>; rel="next", </processor?_prev=2021-12-03T12:34:05.199Z>; rel="prev"
-
 ```
 
 ```json
