@@ -10,16 +10,13 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-site
 
 ### Request parameters
 
-| Name   | Type   | Description         |
-|--------|--------|---------------------|
-| `url`  | string | Site URL (absolute) |
+| Name   | Type   | Description    |
+|--------|--------|----------------|
+| `url`  | string | URL (absolute) |
 
 ### Response parameters
 
-| Name   | Type   | Description         |
-|--------|--------|---------------------|
-| `href` | string | Href                |
-| `url`  | string | Site URL (absolute) |
+Response parameters are as for [/site/:site_id GET](#sitesite_id-get).
 
 ### Request example
 
