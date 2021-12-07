@@ -1,6 +1,6 @@
 # Processor
 
-Processors are plugins which extract data from a crawled page. Processors must be registered within the system, making them available to Crawls.
+Processors are plugins which extract data from fetched pages. Processors must be registered within the system, making them available to Crawls.
 
 ## /processor POST
 
