@@ -19,6 +19,11 @@ Isoxya Pro adds high availability, error recovery, and horizontal scaling. It is
 https://www.isoxya.com/pro/  
 
 
+## Tutorial
+
+To get started, follow the [tutorial](Tutorial.md).
+
+
 ## Contact
 
 [tp@tiredpixel.com](mailto:tp@tiredpixel.com) · [www.tiredpixel.com](https://www.tiredpixel.com/) · [www.isoxya.com](https://www.isoxya.com/)

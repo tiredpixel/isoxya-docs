@@ -2,6 +2,7 @@
 
 Streamers are plugins which send extracted data elsewhere. Streamers must be registered within the system, making them available to [Crawls](Crawl.md).
 
+
 ## /streamer POST
 
 Create a Streamer.
@@ -49,6 +50,7 @@ location: /streamer/9a4b2917-524a-4487-a2e2-3f13556fca94
 }
 ```
 
+
 ## /streamer GET
 
 List Streamers.
@@ -76,6 +78,7 @@ link: </streamer>; rel="first", </streamer?_next=2021-12-03T12:34:18.166Z>; rel=
   }
 ]
 ```
+
 
 ## /streamer/:streamer_id GET
 
@@ -105,6 +108,7 @@ content-type: application/json
   "url": "http://nginx-test-upstream.localhost"
 }
 ```
+
 
 ## /streamer/:streamer_id DELETE
 

@@ -2,6 +2,7 @@
 
 Processors are plugins which extract data from fetched pages. Processors must be registered within the system, making them available to [Crawls](Crawl.md).
 
+
 ## /processor POST
 
 Create a Processor.
@@ -49,6 +50,7 @@ location: /processor/0ba4a54a-f9a0-4cad-8f66-a8e94e8cd30a
 }
 ```
 
+
 ## /processor GET
 
 List Processors.
@@ -76,6 +78,7 @@ link: </processor>; rel="first", </processor?_next=2021-12-03T12:34:05.199Z>; re
   }
 ]
 ```
+
 
 ## /processor/:processor_id GET
 
@@ -105,6 +108,7 @@ content-type: application/json
   "url": "http://isoxya-plugin-crawler-html.localhost/data"
 }
 ```
+
 
 ## /processor/:processor_id DELETE
 

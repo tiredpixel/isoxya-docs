@@ -1,5 +1,6 @@
 # Apex
 
+
 ## / GET
 
 Read the apex, returning metadata about the API and its status. This route is suitable for use as a healthcheck, indicating whether the API is available and healthy. Calling the route usually operates as a shallow healthcheck; periodically, however, a deep healthcheck is performed, the time of which is exposed as `now`.

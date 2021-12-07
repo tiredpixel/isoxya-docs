@@ -1,5 +1,6 @@
 # Tutorial
 
+
 ## Initialise state directory
 
 ```sh
@@ -17,7 +18,8 @@ endpoint [http://localhost]:
 }
 ```
 
-## Register processor plugin
+
+## Register [Processor](Endpoints/Processor.md) plugin
 
 ```sh
 isoxya-api-create-processor
@@ -36,7 +38,8 @@ tag [crawler-html]:
 }
 ```
 
-## Register streamer plugin
+
+## Register [Streamer](Endpoints/Streamer.md) plugin
 
 ```sh
 isoxya-api-create-streamer
@@ -55,7 +58,8 @@ tag [nginx-test-upstream]:
 }
 ```
 
-## Register site
+
+## Register [Site](Endpoints/Site.md)
 
 ```sh
 isoxya-api-create-site
@@ -72,7 +76,8 @@ url [http://example.com]:
 }
 ```
 
-## Start crawl
+
+## Start [Crawl](Endpoints/Crawl.md)
 
 ```sh
 isoxya-api-create-crawl
@@ -111,7 +116,8 @@ streamers.hrefs [/streamer/85bdb819-5c47-4068-9b37-4992311dff79]:
 }
 ```
 
-## Check crawl status
+
+## Check [Crawl](Endpoints/Crawl.md) status
 
 ```sh
 isoxya-api-read
@@ -155,10 +161,11 @@ href:
 }
 ```
 
+
 ## Next
 
-To crawl the same site again, use `isoxya-api-create-crawl`.
+To crawl the same [Site](Endpoints/Site.md) again, use `isoxya-api-create-crawl`.
 
-To crawl another site, register it with `isoxya-api-create-site` first.
+To crawl another [Site](Endpoints/Site.md), register it with `isoxya-api-create-site` first.
 
 That's it!
