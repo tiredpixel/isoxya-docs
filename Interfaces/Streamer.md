@@ -2,21 +2,21 @@
 
 ## /* POST
 
-Send extracted data and page metadata to a streamer plugin.
+Send extracted data and page metadata to a [Streamer](../Endpoints/Streamer.md) plugin.
 
 ### Request parameters
 
-| Name             | Type   | Description                                               |
-|------------------|--------|-----------------------------------------------------------|
-| `crawl.began`    | string | Crawl time began                                          |
-| `crawl.href`     | string | Crawl Href                                                |
-| `data`           | object | free-form extracted data; processor may define own schema |
-| `processor.href` | string | Processor Href                                            |
-| `processor.tag`  | string | Processor tag; used for conditional data-streamer logic   |
-| `retrieved`      | string | page time retrieved                                       |
-| `site.href`      | string | Site Href                                                 |
-| `site.url`       | string | Site URL (absolute)                                       |
-| `url`            | string | page URL (absolute)                                       |
+| Name             | Type   | Description                                                                            |
+|------------------|--------|----------------------------------------------------------------------------------------|
+| `crawl.began`    | string | [Crawl](../Endpoints/Crawl.md) time began                                              |
+| `crawl.href`     | string | [Crawl](../Endpoints/Crawl.md) Href                                                    |
+| `data`           | object | free-form extracted data; [Processor](../Endpoints/Processor.md) may define own schema |
+| `processor.href` | string | [Processor](../Endpoints/Processor.md) Href                                            |
+| `processor.tag`  | string | [Processor](../Endpoints/Processor.md) tag; used for conditional data-streamer logic   |
+| `retrieved`      | string | Page time retrieved                                                                    |
+| `site.href`      | string | [Site](../Endpoints/Site.md) Href                                                      |
+| `site.url`       | string | [Site](../Endpoints/Site.md) URL (absolute)                                            |
+| `url`            | string | Page URL (absolute)                                                                    |
 
 ### Response parameters
 

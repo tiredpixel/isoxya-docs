@@ -12,8 +12,8 @@ endpoint [http://localhost]:
 
 ```json
 {
-  "now": "2021-12-02T13:35:22.149003003Z",
-  "version": "0.0.0"
+  "now": "2021-12-07T12:20:45.350666784Z",
+  "version": "2.1.6.39"
 }
 ```
 
@@ -30,7 +30,7 @@ tag [crawler-html]:
 
 ```json
 {
-  "href": "/processor/17f17cef-6eb3-4bf4-bbf0-a3d729b3d650",
+  "href": "/processor/cebc70e8-b303-433e-a9ac-aa98a8410e1c",
   "tag": "crawler-html",
   "url": "http://isoxya-plugin-crawler-html.localhost/data"
 }
@@ -49,7 +49,7 @@ tag [nginx-test-upstream]:
 
 ```json
 {
-  "href": "/streamer/68e526ee-dd89-4a0e-932f-bf23825fabd0",
+  "href": "/streamer/85bdb819-5c47-4068-9b37-4992311dff79",
   "tag": "nginx-test-upstream",
   "url": "http://nginx-test-upstream.localhost"
 }
@@ -81,20 +81,20 @@ isoxya-api-create-crawl
 ```txt
 site.href [/site/aHR0cDovL2V4YW1wbGUuY29tOjgw]: 
 processor_config [null]: 
-processors.hrefs [/processor/17f17cef-6eb3-4bf4-bbf0-a3d729b3d650]: 
-streamers.hrefs [/streamer/68e526ee-dd89-4a0e-932f-bf23825fabd0]: 
+processors.hrefs [/processor/cebc70e8-b303-433e-a9ac-aa98a8410e1c]: 
+streamers.hrefs [/streamer/85bdb819-5c47-4068-9b37-4992311dff79]: 
 ```
 
 ```json
 {
-  "began": "2021-12-02T13:37:02.063613916Z",
+  "began": "2021-12-07T12:22:18.374602995Z",
   "ended": null,
-  "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-02T13:37:02.063613916Z",
+  "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-07T12:22:18.374602995Z",
   "pages": null,
   "processor_config": null,
   "processors": [
     {
-      "href": "/processor/17f17cef-6eb3-4bf4-bbf0-a3d729b3d650"
+      "href": "/processor/cebc70e8-b303-433e-a9ac-aa98a8410e1c"
     }
   ],
   "progress": null,
@@ -105,7 +105,7 @@ streamers.hrefs [/streamer/68e526ee-dd89-4a0e-932f-bf23825fabd0]:
   "status": "pending",
   "streamers": [
     {
-      "href": "/streamer/68e526ee-dd89-4a0e-932f-bf23825fabd0"
+      "href": "/streamer/85bdb819-5c47-4068-9b37-4992311dff79"
     }
   ]
 }
@@ -119,26 +119,26 @@ isoxya-api-read
 
 ```txt
 href:
-    0: /processor/17f17cef-6eb3-4bf4-bbf0-a3d729b3d650
-    1: /streamer/68e526ee-dd89-4a0e-932f-bf23825fabd0
+    0: /processor/cebc70e8-b303-433e-a9ac-aa98a8410e1c
+    1: /streamer/85bdb819-5c47-4068-9b37-4992311dff79
     2: 
     3: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw
     4: 
-    5: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-02T13:37:02.063613916Z
+    5: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-07T12:22:18.374602995Z
   [5]: 
-  /site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-02T13:37:02.063613916Z
+  /site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-07T12:22:18.374602995Z
 ```
 
 ```json
 {
-  "began": "2021-12-02T13:37:02.063613916Z",
-  "ended": "2021-12-02T13:37:02.596Z",
-  "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-02T13:37:02.063613916Z",
+  "began": "2021-12-07T12:22:18.374602995Z",
+  "ended": "2021-12-07T12:22:19.07Z",
+  "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-07T12:22:18.374602995Z",
   "pages": 1,
   "processor_config": null,
   "processors": [
     {
-      "href": "/processor/17f17cef-6eb3-4bf4-bbf0-a3d729b3d650"
+      "href": "/processor/cebc70e8-b303-433e-a9ac-aa98a8410e1c"
     }
   ],
   "progress": 100,
@@ -149,7 +149,7 @@ href:
   "status": "completed",
   "streamers": [
     {
-      "href": "/streamer/68e526ee-dd89-4a0e-932f-bf23825fabd0"
+      "href": "/streamer/85bdb819-5c47-4068-9b37-4992311dff79"
     }
   ]
 }

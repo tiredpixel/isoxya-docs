@@ -2,27 +2,27 @@
 
 ## /* POST
 
-Send page metadata, header, and body to a processor plugin, and receive extracted data and outbound URLs to crawl.
+Send page metadata, header, and body to a [Processor](../Endpoints/Processor.md) plugin, and receive extracted data and outbound URLs to crawl.
 
 ### Request parameters
 
-| Name            | Type    | Description                             |
-|-----------------|---------|-----------------------------------------|
-| `body`          | string  | page body (Base-64); e.g. HTML or image |
-| `header`        | object  | response HTTP header                    |
-| `meta.config`   | object? | processor config                        |
-| `meta.duration` | number? | request duration (ms)                   |
-| `meta.error`    | string? | error; e.g. `RobotDisallowed`           |
-| `meta.method`   | string  | request HTTP method                     |
-| `meta.status`   | number? | response HTTP status code               |
-| `meta.url`      | string  | page URL (absolute)                     |
+| Name            | Type    | Description                                   |
+|-----------------|---------|-----------------------------------------------|
+| `body`          | string  | response body (Base-64); e.g. HTML or image   |
+| `header`        | object  | response HTTP header                          |
+| `meta.config`   | object? | [Processor](../Endpoints/Processor.md) config |
+| `meta.duration` | number? | request duration (ms)                         |
+| `meta.error`    | string? | error; e.g. `RobotDisallowed`                 |
+| `meta.method`   | string  | request HTTP method                           |
+| `meta.status`   | number? | response HTTP status code                     |
+| `meta.url`      | string  | request URL (absolute)                        |
 
 ### Response parameters
 
-| Name   | Type         | Description                                               |
-|--------|--------------|-----------------------------------------------------------|
-| `data` | object       | free-form extracted data; processor may define own schema |
-| `urls` | array.string | outbound URLs (relative or absolute) to crawl             |
+| Name   | Type         | Description                                                                            |
+|--------|--------------|----------------------------------------------------------------------------------------|
+| `data` | object       | free-form extracted data; [Processor](../Endpoints/Processor.md) may define own schema |
+| `urls` | array.string | outbound URLs (relative or absolute) to crawl                                          |
 
 ### Request example
 
