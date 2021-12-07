@@ -1,6 +1,6 @@
 # Crawl
 
-Crawls are visits to a website, during which crawlers fetch pages, processors extract data from fetched pages, and streamers send extracted data elsewhere. It is not possible to crawl more than one Site within a single Crawl; for that, multiple Crawls should be utilised.
+Crawls are visits to a website, during which Crawlers fetch pages, [Processors](Processor.md) extract data from fetched pages, and [Streamers](Streamer.md) send extracted data elsewhere. It is not possible to crawl more than one [Site](Site.md) within a single Crawl; for that, multiple Crawls should be utilised.
 
 ## /site/:site_id/crawl POST
 
@@ -10,11 +10,11 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-crawl
 
 ### Request parameters
 
-| Name               | Type         | Description      |
-|--------------------|--------------|------------------|
-| `processor_config` | object       | Processor config |
-| `processors`       | array.object | Processors       |
-| `streamers`        | array.object | Streamers        |
+| Name               | Type         | Description                      |
+|--------------------|--------------|----------------------------------|
+| `processor_config` | object       | [Processor](Processor.md) config |
+| `processors`       | array.object | [Processors](Processor.md)       |
+| `streamers`        | array.object | [Streamers](Streamer.md)         |
 
 ### Response parameters
 
@@ -136,13 +136,13 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 | `began`            | string       | time began                                            |
 | `ended`            | string?      | time ended                                            |
 | `href`             | string       | Href                                                  |
-| `pages`            | number?      | total pages discovered                                |
-| `processor_config` | object       | Processor config                                      |
-| `processors`       | array.object | Processors                                            |
+| `pages`            | number?      | total Pages discovered                                |
+| `processor_config` | object       | [Processor](Processor.md) config                      |
+| `processors`       | array.object | [Processors](Processor.md)                            |
 | `progress`         | number?      | progress (%)                                          |
-| `site`             | object       | Site                                                  |
+| `site`             | object       | [Site](Site.md)                                       |
 | `status`           | string       | status: `pending`, `completed`, `limited`, `canceled` |
-| `streamers`        | array.object | Streamers                                             |
+| `streamers`        | array.object | [Streamers](Streamer.md)                              |
 
 ### Response example
 

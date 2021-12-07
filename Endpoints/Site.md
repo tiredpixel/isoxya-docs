@@ -1,6 +1,6 @@
 # Site
 
-Sites are websites, such as might be crawled. Sites must be registered within the system, after which Crawls may be created.
+Sites are websites, such as might be crawled. Sites must be registered within the system, after which [Crawls](Crawl.md) may be created.
 
 ## /site POST
 

@@ -1,6 +1,6 @@
 # Processor
 
-Processors are plugins which extract data from fetched pages. Processors must be registered within the system, making them available to Crawls.
+Processors are plugins which extract data from fetched pages. Processors must be registered within the system, making them available to [Crawls](Crawl.md).
 
 ## /processor POST
 
@@ -10,10 +10,10 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-process
 
 ### Request parameters
 
-| Name   | Type   | Description                              |
-|--------|--------|------------------------------------------|
-| `tag`  | string | tag, used for conditional Streamer logic |
-| `url`  | string | plugin endpoint URL (absolute)           |
+| Name   | Type   | Description                                             |
+|--------|--------|---------------------------------------------------------|
+| `tag`  | string | tag, used for conditional [Streamer](Streamer.md) logic |
+| `url`  | string | plugin endpoint URL (absolute)                          |
 
 ### Response parameters
 
@@ -85,11 +85,11 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 
 ### Response parameters
 
-| Name   | Type   | Description                              |
-|--------|--------|------------------------------------------|
-| `href` | string | Href                                     |
-| `tag`  | string | tag, used for conditional Streamer logic |
-| `url`  | string | plugin endpoint URL (absolute)           |
+| Name   | Type   | Description                                             |
+|--------|--------|---------------------------------------------------------|
+| `href` | string | Href                                                    |
+| `tag`  | string | tag, used for conditional [Streamer](Streamer.md) logic |
+| `url`  | string | plugin endpoint URL (absolute)                          |
 
 ### Response example
 
