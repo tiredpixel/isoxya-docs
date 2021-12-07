@@ -22,7 +22,7 @@ content-type: application/json
 
 ```json
 {
-  "now": "2021-12-03T11:14:05.157959161Z",
-  "version": "0.0.0"
+  "now": "2021-12-07T09:10:00.288572447Z",
+  "version": "2.1.6.38"
 }
 ```
