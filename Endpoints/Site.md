@@ -11,9 +11,11 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-site
 
 ### Request parameters
 
-| Name   | Type   | Description    |
-|--------|--------|----------------|
-| `url`  | string | URL (absolute) |
+| Name       | Edition | Type    | Description                         |
+|------------|---------|---------|-------------------------------------|
+| `channels` | Pro     | number? | channels, used for scaling crawlers |
+| `rate_lim` | Pro     | number? | rate limit (reqs/s) (decimal)       |
+| `url`      |         | string  | URL (absolute)                      |
 
 ### Response parameters
 
@@ -28,6 +30,8 @@ content-type: application/json
 
 ```json
 {
+  "channels": null,
+  "rate_lim": null,
   "url": "http://example.com"
 }
 ```
@@ -42,7 +46,9 @@ location: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw
 
 ```json
 {
+  "channels": 1,
   "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
+  "rate_lim": 1,
   "url": "http://example.com:80"
 }
 ```
@@ -56,10 +62,12 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 
 ### Response parameters
 
-| Name   | Type   | Description         |
-|--------|--------|---------------------|
-| `href` | string | Href                |
-| `url`  | string | Site URL (absolute) |
+| Name       | Edition | Type   | Description                         |
+|------------|---------|--------|-------------------------------------|
+| `channels` | Pro     | number | channels, used for scaling crawlers |
+| `href`     |         | string | Href                                |
+| `rate_lim` | Pro     | number | rate limit (reqs/s) (decimal)       |
+| `url`      |         | string | Site URL (absolute)                 |
 
 ### Response example
 
@@ -70,7 +78,9 @@ content-type: application/json
 
 ```json
 {
+  "channels": 1,
   "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
+  "rate_lim": 1,
   "url": "http://example.com:80"
 }
 ```

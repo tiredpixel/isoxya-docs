@@ -11,10 +11,11 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-streame
 
 ### Request parameters
 
-| Name   | Type   | Description                    |
-|--------|--------|--------------------------------|
-| `tag`  | string | tag                            |
-| `url`  | string | plugin endpoint URL (absolute) |
+| Name       | Edition | Type    | Description                          |
+|------------|---------|---------|--------------------------------------|
+| `channels` | Pro     | number? | channels, used for scaling streamers |
+| `tag`      |         | string  | tag                                  |
+| `url`      |         | string  | plugin endpoint URL (absolute)       |
 
 ### Response parameters
 
@@ -29,6 +30,7 @@ content-type: application/json
 
 ```json
 {
+  "channels": null,
   "tag": "nginx-test-upstream",
   "url": "http://nginx-test-upstream.localhost"
 }
@@ -39,12 +41,13 @@ content-type: application/json
 ```http
 HTTP/1.1 201 Created
 content-type: application/json
-location: /streamer/9a4b2917-524a-4487-a2e2-3f13556fca94
+location: /streamer/15e7409e-f7c7-4179-aa25-6e2e1c0babe7
 ```
 
 ```json
 {
-  "href": "/streamer/9a4b2917-524a-4487-a2e2-3f13556fca94",
+  "channels": 1,
+  "href": "/streamer/15e7409e-f7c7-4179-aa25-6e2e1c0babe7",
   "tag": "nginx-test-upstream",
   "url": "http://nginx-test-upstream.localhost"
 }
@@ -66,13 +69,14 @@ Response parameters are as for [/streamer/:streamer_id GET](#streamerstreamer_id
 ```http
 HTTP/1.1 200 OK
 content-type: application/json
-link: </streamer>; rel="first", </streamer?_next=2021-12-03T12:34:18.166Z>; rel="next", </streamer?_prev=2021-12-03T12:34:18.166Z>; rel="prev"
+link: </streamer>; rel="first", </streamer?_next=2021-12-13T10:51:20.599317Z>; rel="next", </streamer?_prev=2021-12-13T10:51:20.599317Z>; rel="prev"
 ```
 
 ```json
 [
   {
-    "href": "/streamer/9a4b2917-524a-4487-a2e2-3f13556fca94",
+    "channels": 1,
+    "href": "/streamer/15e7409e-f7c7-4179-aa25-6e2e1c0babe7",
     "tag": "nginx-test-upstream",
     "url": "http://nginx-test-upstream.localhost"
   }
@@ -88,11 +92,12 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 
 ### Response parameters
 
-| Name   | Type   | Description                    |
-|--------|--------|--------------------------------|
-| `href` | string | Href                           |
-| `tag`  | string | tag                            |
-| `url`  | string | plugin endpoint URL (absolute) |
+| Name       | Edition | Type   | Description                          |
+|------------|---------|--------|--------------------------------------|
+| `channels` | Pro     | number | channels, used for scaling streamers |
+| `href`     |         | string | Href                                 |
+| `tag`      |         | string | tag                                  |
+| `url`      |         | string | plugin endpoint URL (absolute)       |
 
 ### Response example
 
@@ -103,7 +108,8 @@ content-type: application/json
 
 ```json
 {
-  "href": "/streamer/9a4b2917-524a-4487-a2e2-3f13556fca94",
+  "channels": 1,
+  "href": "/streamer/15e7409e-f7c7-4179-aa25-6e2e1c0babe7",
   "tag": "nginx-test-upstream",
   "url": "http://nginx-test-upstream.localhost"
 }
