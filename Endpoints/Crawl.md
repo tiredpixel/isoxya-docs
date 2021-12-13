@@ -13,7 +13,7 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-crawl
 
 | Name               | Type         | Description                      |
 |--------------------|--------------|----------------------------------|
-| `processor_config` | object       | [Processor](Processor.md) config |
+| `processor_config` | object?      | [Processor](Processor.md) config |
 | `processors`       | array.object | [Processors](Processor.md)       |
 | `streamers`        | array.object | [Streamers](Streamer.md)         |
 
@@ -140,7 +140,7 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 | `ended`            | string?      | time ended                                            |
 | `href`             | string       | Href                                                  |
 | `pages`            | number?      | total Pages discovered                                |
-| `processor_config` | object       | [Processor](Processor.md) config                      |
+| `processor_config` | object?      | [Processor](Processor.md) config                      |
 | `processors`       | array.object | [Processors](Processor.md)                            |
 | `progress`         | number?      | progress (%)                                          |
 | `site`             | object       | [Site](Site.md)                                       |
