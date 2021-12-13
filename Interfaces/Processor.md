@@ -12,7 +12,7 @@ Send page metadata, header, and body to a [Processor](../Endpoints/Processor.md)
 | `body`          | string  | response body (Base-64); e.g. HTML or image   |
 | `header`        | object  | response HTTP header                          |
 | `meta.config`   | object? | [Processor](../Endpoints/Processor.md) config |
-| `meta.duration` | number? | request duration (ms)                         |
+| `meta.duration` | number? | request duration (s)                          |
 | `meta.error`    | string? | error; e.g. `RobotDisallowed`                 |
 | `meta.method`   | string  | request HTTP method                           |
 | `meta.status`   | number? | response HTTP status code                     |
@@ -52,7 +52,7 @@ content-type: application/json
   },
   "meta": {
     "config": null,
-    "duration": 103,
+    "duration": 0.103,
     "error": null,
     "method": "GET",
     "status": 200,
@@ -71,7 +71,7 @@ content-type: application/json
 ```json
 {
   "data": {
-    "duration": 103,
+    "duration": 0.103,
     "error": null,
     "header": {
       "Accept-Ranges": "bytes",

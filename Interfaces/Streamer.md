@@ -37,7 +37,7 @@ content-type: application/json
     "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-03T10:59:54.064096684Z"
   },
   "data": {
-    "duration": 205,
+    "duration": 0.205,
     "error": null,
     "header": {
       "Accept-Ranges": "bytes",
