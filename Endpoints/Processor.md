@@ -13,7 +13,7 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-process
 
 | Name       | Edition | Type    | Description                                             |
 |------------|---------|---------|---------------------------------------------------------|
-| `channels` | Pro     | number? | channels, used for scaling processors                   |
+| `channels` | Pro     | number? | channels, used for scaling Processors                   |
 | `tag`      |         | string  | tag, used for conditional [Streamer](Streamer.md) logic |
 | `url`      |         | string  | plugin endpoint URL (absolute)                          |
 
@@ -41,13 +41,13 @@ content-type: application/json
 ```http
 HTTP/1.1 201 Created
 content-type: application/json
-location: /processor/7b3162d0-4519-4231-900c-797e882f964c
+location: /processor/e94e9103-0b92-4248-8ad3-c56e9f974d41
 ```
 
 ```json
 {
   "channels": 1,
-  "href": "/processor/7b3162d0-4519-4231-900c-797e882f964c",
+  "href": "/processor/e94e9103-0b92-4248-8ad3-c56e9f974d41",
   "tag": "crawler-html",
   "url": "http://isoxya-plugin-crawler-html.localhost/data"
 }
@@ -69,14 +69,14 @@ Response parameters are as for [/processor/:processor_id GET](#processorprocesso
 ```http
 HTTP/1.1 200 OK
 content-type: application/json
-link: </processor>; rel="first", </processor?_next=2021-12-13T10:51:11.271233Z>; rel="next", </processor?_prev=2021-12-13T10:51:11.271233Z>; rel="prev"
+link: </processor>; rel="first", </processor?_next=2021-12-15T10:58:16.014549Z>; rel="next", </processor?_prev=2021-12-15T10:58:16.014549Z>; rel="prev"
 ```
 
 ```json
 [
   {
     "channels": 1,
-    "href": "/processor/7b3162d0-4519-4231-900c-797e882f964c",
+    "href": "/processor/e94e9103-0b92-4248-8ad3-c56e9f974d41",
     "tag": "crawler-html",
     "url": "http://isoxya-plugin-crawler-html.localhost/data"
   }
@@ -94,7 +94,7 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 
 | Name       | Edition | Type   | Description                                             |
 |------------|---------|--------|---------------------------------------------------------|
-| `channels` | Pro     | number | channels, used for scaling processors                   |
+| `channels` | Pro     | number | channels, used for scaling Processors                   |
 | `href`     |         | string | Href                                                    |
 | `tag`      |         | string | tag, used for conditional [Streamer](Streamer.md) logic |
 | `url`      |         | string | plugin endpoint URL (absolute)                          |
@@ -109,7 +109,7 @@ content-type: application/json
 ```json
 {
   "channels": 1,
-  "href": "/processor/7b3162d0-4519-4231-900c-797e882f964c",
+  "href": "/processor/e94e9103-0b92-4248-8ad3-c56e9f974d41",
   "tag": "crawler-html",
   "url": "http://isoxya-plugin-crawler-html.localhost/data"
 }

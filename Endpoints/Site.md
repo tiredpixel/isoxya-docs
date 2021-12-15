@@ -13,7 +13,7 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-site
 
 | Name       | Edition | Type    | Description                         |
 |------------|---------|---------|-------------------------------------|
-| `channels` | Pro     | number? | channels, used for scaling crawlers |
+| `channels` | Pro     | number? | channels, used for scaling Crawlers |
 | `rate_lim` | Pro     | number? | rate limit (reqs/s) (decimal)       |
 | `url`      |         | string  | URL (absolute)                      |
 
@@ -64,7 +64,7 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 
 | Name       | Edition | Type   | Description                         |
 |------------|---------|--------|-------------------------------------|
-| `channels` | Pro     | number | channels, used for scaling crawlers |
+| `channels` | Pro     | number | channels, used for scaling Crawlers |
 | `href`     |         | string | Href                                |
 | `rate_lim` | Pro     | number | rate limit (reqs/s) (decimal)       |
 | `url`      |         | string | Site URL (absolute)                 |
