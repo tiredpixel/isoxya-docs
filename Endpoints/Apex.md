@@ -23,7 +23,7 @@ content-type: application/json
 
 ```json
 {
-  "time": "2021-12-15T14:54:08.080649437Z",
-  "version": "2.1.6.41"
+  "time": "2021-12-16T14:34:28.704403831Z",
+  "version": "2.1.6.49"
 }
 ```

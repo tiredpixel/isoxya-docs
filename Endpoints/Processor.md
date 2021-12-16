@@ -41,13 +41,13 @@ content-type: application/json
 ```http
 HTTP/1.1 201 Created
 content-type: application/json
-location: /processor/e94e9103-0b92-4248-8ad3-c56e9f974d41
+location: /processor/7135e6c2-3026-44bf-abcc-c64af3efce73
 ```
 
 ```json
 {
   "channels": 1,
-  "href": "/processor/e94e9103-0b92-4248-8ad3-c56e9f974d41",
+  "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73",
   "tag": "crawler-html",
   "url": "http://isoxya-plugin-crawler-html.localhost/data"
 }
@@ -69,14 +69,14 @@ Response parameters are as for [/processor/:processor_id GET](#processorprocesso
 ```http
 HTTP/1.1 200 OK
 content-type: application/json
-link: </processor>; rel="first", </processor?_next=2021-12-15T10:58:16.014549Z>; rel="next", </processor?_prev=2021-12-15T10:58:16.014549Z>; rel="prev"
+link: </processor>; rel="first", </processor?_next=2021-12-16T14:20:16.32375Z>; rel="next", </processor?_prev=2021-12-16T14:20:16.32375Z>; rel="prev"
 ```
 
 ```json
 [
   {
     "channels": 1,
-    "href": "/processor/e94e9103-0b92-4248-8ad3-c56e9f974d41",
+    "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73",
     "tag": "crawler-html",
     "url": "http://isoxya-plugin-crawler-html.localhost/data"
   }
@@ -109,7 +109,7 @@ content-type: application/json
 ```json
 {
   "channels": 1,
-  "href": "/processor/e94e9103-0b92-4248-8ad3-c56e9f974d41",
+  "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73",
   "tag": "crawler-html",
   "url": "http://isoxya-plugin-crawler-html.localhost/data"
 }

@@ -33,24 +33,24 @@ content-type: application/json
 ```json
 {
   "crawl": {
-    "began": "2021-12-03T10:59:54.064096684Z",
-    "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-03T10:59:54.064096684Z"
+    "began": "2021-12-16T14:29:02.556263Z",
+    "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T14:29:02.556263Z"
   },
   "data": {
-    "duration": 0.205,
+    "duration": 0.106178796,
     "error": null,
     "header": {
       "Accept-Ranges": "bytes",
-      "Age": "201579",
+      "Age": "602398",
       "Cache-Control": "max-age=604800",
       "Content-Encoding": "gzip",
       "Content-Length": "648",
       "Content-Type": "text/html; charset=UTF-8",
-      "Date": "Fri, 03 Dec 2021 10:59:54 GMT",
-      "Etag": "\"3147526947+gzip\"",
-      "Expires": "Fri, 10 Dec 2021 10:59:54 GMT",
+      "Date": "Thu, 16 Dec 2021 14:29:02 GMT",
+      "Etag": "\"3147526947+ident\"",
+      "Expires": "Thu, 23 Dec 2021 14:29:02 GMT",
       "Last-Modified": "Thu, 17 Oct 2019 07:18:26 GMT",
-      "Server": "ECS (bsa/EB24)",
+      "Server": "ECS (bsa/EB13)",
       "Vary": "Accept-Encoding",
       "X-Cache": "HIT"
     },
@@ -58,10 +58,10 @@ content-type: application/json
     "status": 200
   },
   "processor": {
-    "href": "/processor/17f17cef-6eb3-4bf4-bbf0-a3d729b3d650",
+    "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73",
     "tag": "crawler-html"
   },
-  "retrieved": "2021-12-03T10:59:54.188859267Z",
+  "retrieved": "2021-12-16T14:29:02.851969124Z",
   "site": {
     "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
     "url": "http://example.com:80"

@@ -41,13 +41,13 @@ content-type: application/json
 ```http
 HTTP/1.1 201 Created
 content-type: application/json
-location: /streamer/e91056f9-55e2-43e4-9ace-3f2c8db5858c
+location: /streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac
 ```
 
 ```json
 {
   "channels": 1,
-  "href": "/streamer/e91056f9-55e2-43e4-9ace-3f2c8db5858c",
+  "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac",
   "tag": "nginx",
   "url": "http://isoxya-plugin-nginx.localhost"
 }
@@ -69,14 +69,14 @@ Response parameters are as for [/streamer/:streamer_id GET](#streamerstreamer_id
 ```http
 HTTP/1.1 200 OK
 content-type: application/json
-link: </streamer>; rel="first", </streamer?_next=2021-12-15T10:58:32.442037Z>; rel="next", </streamer?_prev=2021-12-15T14:36:31.046343Z>; rel="prev"
+link: </streamer>; rel="first", </streamer?_next=2021-12-16T14:20:42.418362Z>; rel="next", </streamer?_prev=2021-12-16T14:20:42.418362Z>; rel="prev"
 ```
 
 ```json
 [
   {
     "channels": 1,
-    "href": "/streamer/e91056f9-55e2-43e4-9ace-3f2c8db5858c",
+    "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac",
     "tag": "nginx",
     "url": "http://isoxya-plugin-nginx.localhost"
   }
@@ -109,7 +109,7 @@ content-type: application/json
 ```json
 {
   "channels": 1,
-  "href": "/streamer/e91056f9-55e2-43e4-9ace-3f2c8db5858c",
+  "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac",
   "tag": "nginx",
   "url": "http://isoxya-plugin-nginx.localhost"
 }
