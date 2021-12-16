@@ -15,8 +15,8 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-crawl
 |--------------------|---------|--------------|-------------------------------------------------------------------|
 | `agent`            | Pro     | string?      | user agent                                                        |
 | `depth_max`        | Pro     | number?      | max depth to crawl before terminating; status: `completed`        |
-| `list`             | Pro     | object?      | [List](List.md) crawl; otherwise Web crawl                        |
-| `pages_max`        | Pro     | number?      | max pages (approx) to crawl before terminating; status: `limited` |
+| `list`             | Pro     | object?      | [List](List.md) Crawl; otherwise Web Crawl                        |
+| `pages_max`        | Pro     | number?      | max Pages (approx) to crawl before terminating; status: `limited` |
 | `processor_config` |         | object?      | [Processor](Processor.md) config                                  |
 | `processors`       |         | array.object | [Processors](Processor.md)                                        |
 | `streamers`        |         | array.object | [Streamers](Streamer.md)                                          |
@@ -152,6 +152,65 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl>; rel="first", </site/aHR0cDovL2
 ```
 
 
+## /site/:site_id/crawl/:site_v/crawl GET (Pro)
+
+List a Crawl's child Crawls. These are created automatically when validating external links. Pro edition only.
+
+https://github.com/isoxya/isoxya-api/blob/unstable/bin/pro/isoxya-api-list-crawl-crawl  
+
+### Response parameters
+
+Response parameters are as for [/site/:site_id/crawl/:site_v GET](#sitesite_idcrawlsite_v-get).
+
+### Response example
+
+```http
+HTTP/1.1 200 OK
+content-type: application/json
+link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T16:16:55.511303Z/crawl>; rel="first", </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T16:16:55.511303Z/crawl?_next=2021-12-16T16:18:47.399965Z>; rel="next", </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T16:16:55.511303Z/crawl?_prev=2021-12-16T16:18:47.399965Z>; rel="prev"
+```
+
+```json
+[
+  {
+    "agent": null,
+    "began": "2021-12-16T16:18:47.399965Z",
+    "depth_max": 1,
+    "ended": null,
+    "href": "/site/aHR0cHM6Ly93d3cuaWFuYS5vcmc6NDQz/crawl/2021-12-16T16:18:47.399965Z",
+    "list": {
+      "href": "/list/57602e9c-2ffd-497c-a097-6e8eef3f92bb"
+    },
+    "pages": 1,
+    "pages_max": null,
+    "parent": {
+      "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T16:16:55.511303Z"
+    },
+    "processor_config": null,
+    "processors": [
+      {
+        "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73"
+      }
+    ],
+    "progress": 0,
+    "site": {
+      "channels": 1,
+      "href": "/site/aHR0cHM6Ly93d3cuaWFuYS5vcmc6NDQz",
+      "rate_lim": 1,
+      "url": "https://www.iana.org:443"
+    },
+    "status": "pending",
+    "streamers": [
+      {
+        "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac"
+      }
+    ],
+    "validate": false
+  }
+]
+```
+
+
 ## /site/:site_id/crawl/:site_v GET
 
 Read a Crawl.
@@ -167,9 +226,9 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 | `depth_max`        | Pro     | number?      | max depth to crawl before terminating; status: `completed`        |
 | `ended`            |         | string?      | time ended                                                        |
 | `href`             |         | string       | Href                                                              |
-| `list`             | Pro     | object?      | [List](List.md) crawl; otherwise Web crawl                        |
+| `list`             | Pro     | object?      | [List](List.md) Crawl; otherwise Web Crawl                        |
 | `pages`            |         | number?      | total Pages discovered                                            |
-| `pages_max`        | Pro     | number?      | max pages (approx) to crawl before terminating; status: `limited` |
+| `pages_max`        | Pro     | number?      | max Pages (approx) to crawl before terminating; status: `limited` |
 | `parent`           | Pro     | object?      | parent Crawl; set when validating external links                  |
 | `processor_config` |         | object?      | [Processor](Processor.md) config                                  |
 | `processors`       |         | array.object | [Processors](Processor.md)                                        |
