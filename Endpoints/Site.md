@@ -2,6 +2,11 @@
 
 Sites are websites, such as might be crawled. Sites must be registered within the system, after which [Crawls](Crawl.md) may be created.
 
+### Routes
+
+- [/site POST](#site-post)
+- [/site/:site_id GET](#sitesite_id-get)
+
 
 ## /site POST
 

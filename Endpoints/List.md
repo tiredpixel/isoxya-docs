@@ -2,6 +2,14 @@
 
 Lists are lists of Pages within a [Site](Site.md). Lists can be used to start a List rather than Web [Crawl](Crawl.md). Lists are also created automatically when validating external links; these are subsequently used to create child [Crawls](Crawl.md). Pro edition only.
 
+### Routes
+
+- [/site/:site_id/list POST (Pro)](#sitesite_idlist-post-pro)
+- [/site/:site_id/list GET (Pro)](#sitesite_idlist-get-pro)
+- [/site/:site_id/crawl/:site_v/list GET (Pro)](#sitesite_idcrawlsite_vlist-get-pro)
+- [/list/:list_id GET (Pro)](#listlist_id-get-pro)
+- [/list/:list_id DELETE (Pro)](#listlist_id-delete-pro)
+
 
 ## /site/:site_id/list POST (Pro)
 

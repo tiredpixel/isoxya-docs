@@ -2,6 +2,13 @@
 
 Streamers are plugins which send extracted data elsewhere. Streamers must be registered within the system, making them available to [Crawls](Crawl.md).
 
+### Routes
+
+- [/streamer POST](#streamer-post)
+- [/streamer GET](#streamer-get)
+- [/streamer/:streamer_id GET](#streamerstreamer_id-get)
+- [/streamer/:streamer_id DELETE](#streamerstreamer_id-delete)
+
 
 ## /streamer POST
 

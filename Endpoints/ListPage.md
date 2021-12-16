@@ -2,6 +2,10 @@
 
 ListPages are Pages within a [List](List.md), within a [Site](Site.md). Using this, it's possible to insert Pages into a [List](List.md). It's not possible to read them afterwards, however—only the total number of Pages in a [List](List.md). Pro edition only.
 
+### Routes
+
+- [/list/:list_id/list_page POST (Pro)](#listlist_idlist_page-post-pro)
+
 
 ## /list/:list_id/list_page POST (Pro)
 

@@ -1,5 +1,9 @@
 # Apex
 
+### Routes
+
+- [/ GET](#-get)
+
 
 ## / GET
 

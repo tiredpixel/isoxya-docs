@@ -2,6 +2,13 @@
 
 Processors are plugins which extract data from fetched pages. Processors must be registered within the system, making them available to [Crawls](Crawl.md).
 
+### Routes
+
+- [/processor POST](#processor-post)
+- [/processor GET](#processor-get)
+- [/processor/:processor_id GET](#processorprocessor_id-get)
+- [/processor/:processor_id DELETE](#processorprocessor_id-delete)
+
 
 ## /processor POST
 

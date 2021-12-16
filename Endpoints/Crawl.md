@@ -2,6 +2,14 @@
 
 Crawls are visits to a website, during which Crawlers fetch pages, [Processors](Processor.md) extract data from fetched pages, and [Streamers](Streamer.md) send extracted data elsewhere. It is not possible to crawl more than one [Site](Site.md) within a single Crawl; for that, multiple Crawls should be utilised.
 
+### Routes
+
+- [/site/:site_id/crawl POST](#sitesite_idcrawl-post)
+- [/site/:site_id/crawl GET](#sitesite_idcrawl-get)
+- [/site/:site_id/crawl/:site_v/crawl GET (Pro)](#sitesite_idcrawlsite_vcrawl-get-pro)
+- [/site/:site_id/crawl/:site_v GET](#sitesite_idcrawlsite_v-get)
+- [/site/:site_id/crawl/:site_v PATCH (Pro)](#sitesite_idcrawlsite_v-patch-pro)
+
 
 ## /site/:site_id/crawl POST
 
