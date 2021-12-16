@@ -219,3 +219,74 @@ content-type: application/json
   "validate": false
 }
 ```
+
+
+## /site/:site_id/crawl/:site_v PATCH (Pro)
+
+Update a Crawl. Currently, this only supports cancelling a Crawl. Pro edition only.
+
+https://github.com/isoxya/isoxya-api/blob/unstable/bin/pro/isoxya-api-update-crawl-cancel  
+
+### Request parameters
+
+| Name               | Edition | Type    | Description                      |
+|--------------------|---------|---------|----------------------------------|
+| `status`           | Pro     | string? | status: `canceled` cancels Crawl |
+
+### Response parameters
+
+Response parameters are as for [/site/:site_id/crawl/:site_v GET](#sitesite_idcrawlsite_v-get).
+
+### Request example
+
+```http
+PATCH /site/aHR0cHM6Ly93d3cuaXNveHlhLmNvbTo0NDM/crawl/2021-12-16T15:09:17.270107Z HTTP/1.1
+content-type: application/json
+```
+
+```json
+{
+  "status": "canceled"
+}
+```
+
+### Response example
+
+```http
+HTTP/1.1 200 OK
+content-type: application/json
+```
+
+```json
+{
+  "agent": null,
+  "began": "2021-12-16T15:09:17.270107Z",
+  "depth_max": null,
+  "ended": null,
+  "href": "/site/aHR0cHM6Ly93d3cuaXNveHlhLmNvbTo0NDM/crawl/2021-12-16T15:09:17.270107Z",
+  "list": null,
+  "pages": 1,
+  "pages_max": null,
+  "parent": null,
+  "processor_config": null,
+  "processors": [
+    {
+      "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73"
+    }
+  ],
+  "progress": 0,
+  "site": {
+    "channels": 1,
+    "href": "/site/aHR0cHM6Ly93d3cuaXNveHlhLmNvbTo0NDM",
+    "rate_lim": 1,
+    "url": "https://www.isoxya.com:443"
+  },
+  "status": "canceled",
+  "streamers": [
+    {
+      "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac"
+    }
+  ],
+  "validate": false
+}
+```
