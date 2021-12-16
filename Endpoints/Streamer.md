@@ -4,10 +4,40 @@ Streamers are plugins which send extracted data elsewhere. Streamers must be reg
 
 ### Routes
 
-- [/streamer POST](#streamer-post)
 - [/streamer GET](#streamer-get)
-- [/streamer/:streamer_id GET](#streamerstreamer_id-get)
+- [/streamer POST](#streamer-post)
 - [/streamer/:streamer_id DELETE](#streamerstreamer_id-delete)
+- [/streamer/:streamer_id GET](#streamerstreamer_id-get)
+
+
+## /streamer GET
+
+List Streamers.
+
+https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-list-streamer  
+
+### Response parameters
+
+Response parameters are as for [/streamer/:streamer_id GET](#streamerstreamer_id-get).
+
+### Response example
+
+```http
+HTTP/1.1 200 OK
+content-type: application/json
+link: </streamer>; rel="first", </streamer?_next=2021-12-16T14:20:42.418362Z>; rel="next", </streamer?_prev=2021-12-16T14:20:42.418362Z>; rel="prev"
+```
+
+```json
+[
+  {
+    "channels": 1,
+    "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac",
+    "tag": "nginx",
+    "url": "http://isoxya-plugin-nginx.localhost"
+  }
+]
+```
 
 
 ## /streamer POST
@@ -61,33 +91,16 @@ location: /streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac
 ```
 
 
-## /streamer GET
+## /streamer/:streamer_id DELETE
 
-List Streamers.
+Delete a Streamer.
 
-https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-list-streamer  
-
-### Response parameters
-
-Response parameters are as for [/streamer/:streamer_id GET](#streamerstreamer_id-get).
+https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-delete  
 
 ### Response example
 
 ```http
-HTTP/1.1 200 OK
-content-type: application/json
-link: </streamer>; rel="first", </streamer?_next=2021-12-16T14:20:42.418362Z>; rel="next", </streamer?_prev=2021-12-16T14:20:42.418362Z>; rel="prev"
-```
-
-```json
-[
-  {
-    "channels": 1,
-    "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac",
-    "tag": "nginx",
-    "url": "http://isoxya-plugin-nginx.localhost"
-  }
-]
+HTTP/1.1 204 No Content
 ```
 
 
@@ -120,17 +133,4 @@ content-type: application/json
   "tag": "nginx",
   "url": "http://isoxya-plugin-nginx.localhost"
 }
-```
-
-
-## /streamer/:streamer_id DELETE
-
-Delete a Streamer.
-
-https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-delete  
-
-### Response example
-
-```http
-HTTP/1.1 204 No Content
 ```

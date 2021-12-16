@@ -4,10 +4,40 @@ Processors are plugins which extract data from fetched pages. Processors must be
 
 ### Routes
 
-- [/processor POST](#processor-post)
 - [/processor GET](#processor-get)
-- [/processor/:processor_id GET](#processorprocessor_id-get)
+- [/processor POST](#processor-post)
 - [/processor/:processor_id DELETE](#processorprocessor_id-delete)
+- [/processor/:processor_id GET](#processorprocessor_id-get)
+
+
+## /processor GET
+
+List Processors.
+
+https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-list-processor  
+
+### Response parameters
+
+Response parameters are as for [/processor/:processor_id GET](#processorprocessor_id-get).
+
+### Response example
+
+```http
+HTTP/1.1 200 OK
+content-type: application/json
+link: </processor>; rel="first", </processor?_next=2021-12-16T14:20:16.32375Z>; rel="next", </processor?_prev=2021-12-16T14:20:16.32375Z>; rel="prev"
+```
+
+```json
+[
+  {
+    "channels": 1,
+    "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73",
+    "tag": "crawler-html",
+    "url": "http://isoxya-plugin-crawler-html.localhost/data"
+  }
+]
+```
 
 
 ## /processor POST
@@ -61,33 +91,16 @@ location: /processor/7135e6c2-3026-44bf-abcc-c64af3efce73
 ```
 
 
-## /processor GET
+## /processor/:processor_id DELETE
 
-List Processors.
+Delete a Processor.
 
-https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-list-processor  
-
-### Response parameters
-
-Response parameters are as for [/processor/:processor_id GET](#processorprocessor_id-get).
+https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-delete  
 
 ### Response example
 
 ```http
-HTTP/1.1 200 OK
-content-type: application/json
-link: </processor>; rel="first", </processor?_next=2021-12-16T14:20:16.32375Z>; rel="next", </processor?_prev=2021-12-16T14:20:16.32375Z>; rel="prev"
-```
-
-```json
-[
-  {
-    "channels": 1,
-    "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73",
-    "tag": "crawler-html",
-    "url": "http://isoxya-plugin-crawler-html.localhost/data"
-  }
-]
+HTTP/1.1 204 No Content
 ```
 
 
@@ -120,17 +133,4 @@ content-type: application/json
   "tag": "crawler-html",
   "url": "http://isoxya-plugin-crawler-html.localhost/data"
 }
-```
-
-
-## /processor/:processor_id DELETE
-
-Delete a Processor.
-
-https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-delete  
-
-### Response example
-
-```http
-HTTP/1.1 204 No Content
 ```
