@@ -22,12 +22,15 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-apex
 
 ```http
 HTTP/1.1 200 OK
+server: Snap/1.1.2.0
 content-type: application/json
+date: Thu, 16 Dec 2021 17:36:44 GMT
+transfer-encoding: chunked
 ```
 
 ```json
 {
-  "time": "2021-12-16T14:34:28.704403831Z",
-  "version": "2.1.6.49"
+  "time": "2021-12-16T17:36:44.334647034Z",
+  "version": "2.1.6.50"
 }
 ```

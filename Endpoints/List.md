@@ -139,7 +139,7 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/pro/isoxya-api-create-lis
 
 ### Request parameters
 
-No request parameters are supported.
+None.
 
 ### Response parameters
 
