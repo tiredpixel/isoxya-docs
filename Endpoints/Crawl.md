@@ -32,7 +32,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl>; rel="first", </site/aHR0cDovL2
 ```json
 [
   {
-    "agent": null,
+    "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
     "began": "2021-12-16T14:39:43.509573Z",
     "depth_max": null,
     "ended": "2021-12-16T14:39:44.239858Z",
@@ -51,7 +51,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl>; rel="first", </site/aHR0cDovL2
     "site": {
       "channels": 1,
       "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-      "rate_lim": 1,
+      "rate_limit": 1,
       "url": "http://example.com:80"
     },
     "status": "completed",
@@ -127,7 +127,7 @@ location: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T14:39:43.509573Z
 
 ```json
 {
-  "agent": null,
+  "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
   "began": "2021-12-16T14:39:43.509573Z",
   "depth_max": null,
   "ended": null,
@@ -146,7 +146,7 @@ location: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T14:39:43.509573Z
   "site": {
     "channels": 1,
     "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-    "rate_lim": 1,
+    "rate_limit": 1,
     "url": "http://example.com:80"
   },
   "status": "pending",
@@ -170,7 +170,7 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 
 | Name               | Edition | Type         | Description                                                       |
 |--------------------|---------|--------------|-------------------------------------------------------------------|
-| `agent`            | Pro     | string?      | user agent                                                        |
+| `agent`            | Pro     | string       | user agent                                                        |
 | `began`            |         | string       | time began                                                        |
 | `depth_max`        | Pro     | number?      | max depth to crawl before terminating; status: `completed`        |
 | `ended`            |         | string?      | time ended                                                        |
@@ -196,7 +196,7 @@ content-type: application/json
 
 ```json
 {
-  "agent": null,
+  "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
   "began": "2021-12-16T14:39:43.509573Z",
   "depth_max": null,
   "ended": "2021-12-16T14:39:44.239858Z",
@@ -215,7 +215,7 @@ content-type: application/json
   "site": {
     "channels": 1,
     "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-    "rate_lim": 1,
+    "rate_limit": 1,
     "url": "http://example.com:80"
   },
   "status": "completed",
@@ -267,7 +267,7 @@ content-type: application/json
 
 ```json
 {
-  "agent": null,
+  "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
   "began": "2021-12-16T15:09:17.270107Z",
   "depth_max": null,
   "ended": null,
@@ -286,7 +286,7 @@ content-type: application/json
   "site": {
     "channels": 1,
     "href": "/site/aHR0cHM6Ly93d3cuaXNveHlhLmNvbTo0NDM",
-    "rate_lim": 1,
+    "rate_limit": 1,
     "url": "https://www.isoxya.com:443"
   },
   "status": "canceled",
@@ -321,7 +321,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T16:16:55.511303Z/craw
 ```json
 [
   {
-    "agent": null,
+    "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
     "began": "2021-12-16T16:18:47.399965Z",
     "depth_max": 1,
     "ended": null,
@@ -344,7 +344,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T16:16:55.511303Z/craw
     "site": {
       "channels": 1,
       "href": "/site/aHR0cHM6Ly93d3cuaWFuYS5vcmc6NDQz",
-      "rate_lim": 1,
+      "rate_limit": 1,
       "url": "https://www.iana.org:443"
     },
     "status": "pending",

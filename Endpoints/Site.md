@@ -16,11 +16,11 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-create-site
 
 ### Request parameters
 
-| Name       | Edition | Type    | Description                         |
-|------------|---------|---------|-------------------------------------|
-| `channels` | Pro     | number? | channels, used for scaling Crawlers |
-| `rate_lim` | Pro     | number? | rate limit (reqs/s) (decimal)       |
-| `url`      |         | string  | URL (absolute)                      |
+| Name         | Edition | Type    | Description                         |
+|--------------|---------|---------|-------------------------------------|
+| `channels`   | Pro     | number? | channels, used for scaling Crawlers |
+| `rate_limit` | Pro     | number? | rate limit (reqs/s) (decimal)       |
+| `url`        |         | string  | URL (absolute)                      |
 
 ### Response parameters
 
@@ -36,7 +36,7 @@ content-type: application/json
 ```json
 {
   "channels": null,
-  "rate_lim": null,
+  "rate_limit": null,
   "url": "http://example.com"
 }
 ```
@@ -53,7 +53,7 @@ location: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw
 {
   "channels": 1,
   "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-  "rate_lim": 1,
+  "rate_limit": 1,
   "url": "http://example.com:80"
 }
 ```
@@ -67,12 +67,12 @@ https://github.com/isoxya/isoxya-api/blob/unstable/bin/isoxya-api-read
 
 ### Response parameters
 
-| Name       | Edition | Type   | Description                         |
-|------------|---------|--------|-------------------------------------|
-| `channels` | Pro     | number | channels, used for scaling Crawlers |
-| `href`     |         | string | Href                                |
-| `rate_lim` | Pro     | number | rate limit (reqs/s) (decimal)       |
-| `url`      |         | string | Site URL (absolute)                 |
+| Name         | Edition | Type   | Description                         |
+|--------------|---------|--------|-------------------------------------|
+| `channels`   | Pro     | number | channels, used for scaling Crawlers |
+| `href`       |         | string | Href                                |
+| `rate_limit` | Pro     | number | rate limit (reqs/s) (decimal)       |
+| `url`        |         | string | Site URL (absolute)                 |
 
 ### Response example
 
@@ -85,7 +85,7 @@ content-type: application/json
 {
   "channels": 1,
   "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-  "rate_lim": 1,
+  "rate_limit": 1,
   "url": "http://example.com:80"
 }
 ```

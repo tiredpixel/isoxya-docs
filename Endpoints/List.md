@@ -54,7 +54,7 @@ content-type: application/json
   "site": {
     "channels": 1,
     "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-    "rate_lim": 1,
+    "rate_limit": 1,
     "url": "http://example.com:80"
   }
 }
@@ -88,7 +88,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T16:16:55.511303Z/list
     "site": {
       "channels": 1,
       "href": "/site/aHR0cHM6Ly93d3cuaWFuYS5vcmc6NDQz",
-      "rate_lim": 1,
+      "rate_limit": 1,
       "url": "https://www.iana.org:443"
     }
   }
@@ -123,7 +123,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/list>; rel="first", </site/aHR0cDovL2V
     "site": {
       "channels": 1,
       "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-      "rate_lim": 1,
+      "rate_limit": 1,
       "url": "http://example.com:80"
     }
   }
@@ -172,7 +172,7 @@ location: /list/4a20e10b-58cf-4310-954a-77e9be03e1d9
   "site": {
     "channels": 1,
     "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-    "rate_lim": 1,
+    "rate_limit": 1,
     "url": "http://example.com:80"
   }
 }

@@ -71,7 +71,7 @@ isoxya-api-create-site
 
 ```txt
 channels (Pro) [null]: 
-rate_lim (Pro) [null]: 
+rate_limit (Pro) [null]: 
 url [http://example.com]: 
 ```
 
@@ -79,7 +79,7 @@ url [http://example.com]:
 {
   "channels": 1,
   "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-  "rate_lim": 1,
+  "rate_limit": 1,
   "url": "http://example.com:80"
 }
 ```
@@ -109,7 +109,7 @@ validate (Pro) [null]:
 
 ```json
 {
-  "agent": null,
+  "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
   "began": "2021-12-16T14:21:41.719297Z",
   "depth_max": null,
   "ended": null,
@@ -128,7 +128,7 @@ validate (Pro) [null]:
   "site": {
     "channels": 1,
     "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-    "rate_lim": 1,
+    "rate_limit": 1,
     "url": "http://example.com:80"
   },
   "status": "pending",
@@ -161,7 +161,7 @@ href:
 
 ```json
 {
-  "agent": null,
+  "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
   "began": "2021-12-16T14:21:41.719297Z",
   "depth_max": null,
   "ended": "2021-12-16T14:23:28.937469Z",
@@ -180,7 +180,7 @@ href:
   "site": {
     "channels": 1,
     "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw",
-    "rate_lim": 1,
+    "rate_limit": 1,
     "url": "http://example.com:80"
   },
   "status": "completed",
