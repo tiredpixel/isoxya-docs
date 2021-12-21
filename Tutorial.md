@@ -110,10 +110,11 @@ validate (Pro) [null]:
 ```json
 {
   "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
-  "began": "2021-12-16T14:21:41.719297Z",
+  "began": "2021-12-21T10:29:06.959456Z",
   "depth_max": null,
+  "duration": null,
   "ended": null,
-  "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T14:21:41.719297Z",
+  "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-21T10:29:06.959456Z",
   "list": null,
   "pages": null,
   "pages_max": null,
@@ -121,7 +122,7 @@ validate (Pro) [null]:
   "processor_config": null,
   "processors": [
     {
-      "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73"
+      "href": "/processor/7490dcfc-9756-46e0-a641-e0fe57ce3e20"
     }
   ],
   "progress": null,
@@ -131,10 +132,11 @@ validate (Pro) [null]:
     "rate_limit": 1,
     "url": "http://example.com:80"
   },
+  "speed": null,
   "status": "pending",
   "streamers": [
     {
-      "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac"
+      "href": "/streamer/9426239c-97e3-4879-a689-6d5e4f19eadf"
     }
   ],
   "validate": false
@@ -162,10 +164,11 @@ href:
 ```json
 {
   "agent": "Isoxya/0.0.0 (+https://www.isoxya.com/)",
-  "began": "2021-12-16T14:21:41.719297Z",
+  "began": "2021-12-21T10:29:06.959456Z",
   "depth_max": null,
-  "ended": "2021-12-16T14:23:28.937469Z",
-  "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T14:21:41.719297Z",
+  "duration": 0.548366,
+  "ended": "2021-12-21T10:29:07.507822Z",
+  "href": "/site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-21T10:29:06.959456Z",
   "list": null,
   "pages": 1,
   "pages_max": null,
@@ -173,7 +176,7 @@ href:
   "processor_config": null,
   "processors": [
     {
-      "href": "/processor/7135e6c2-3026-44bf-abcc-c64af3efce73"
+      "href": "/processor/7490dcfc-9756-46e0-a641-e0fe57ce3e20"
     }
   ],
   "progress": 100,
@@ -183,10 +186,11 @@ href:
     "rate_limit": 1,
     "url": "http://example.com:80"
   },
+  "speed": 1.823599566712,
   "status": "completed",
   "streamers": [
     {
-      "href": "/streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac"
+      "href": "/streamer/9426239c-97e3-4879-a689-6d5e4f19eadf"
     }
   ],
   "validate": false
