@@ -14,7 +14,7 @@ Processors are plugins which extract data from fetched pages. Processors must be
 
 List Processors.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-list-processor  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-list-processor  
 
 ### Response parameters
 
@@ -44,7 +44,7 @@ link: </processor>; rel="first", </processor?_next=2021-12-16T14:20:16.32375Z>; 
 
 Create a Processor.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-create-processor  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-create-processor  
 
 ### Request parameters
 
@@ -95,7 +95,7 @@ location: /processor/7135e6c2-3026-44bf-abcc-c64af3efce73
 
 Delete a Processor.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-delete  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-delete  
 
 ### Response example
 
@@ -108,7 +108,7 @@ HTTP/1.1 204 No Content
 
 Read a Processor.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-read  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-read  
 
 ### Response parameters
 

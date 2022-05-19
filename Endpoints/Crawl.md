@@ -15,7 +15,7 @@ Crawls are visits to a website, during which Crawlers fetch pages, [Processors](
 
 List Crawls.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-list-crawl  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-list-crawl  
 
 ### Response parameters
 
@@ -72,7 +72,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl>; rel="first", </site/aHR0cDovL2
 
 Create a Crawl.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-create-crawl  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-create-crawl  
 
 ### Request parameters
 
@@ -168,7 +168,7 @@ location: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-21T10:25:56.434859Z
 
 Read a Crawl.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-read  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-read  
 
 ### Response parameters
 
@@ -241,7 +241,7 @@ content-type: application/json
 
 Update a Crawl. Currently, this only supports cancelling a Crawl. Pro edition only.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/pro/isoxya-api-update-crawl-cancel  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/pro/isoxya-api-update-crawl-cancel  
 
 ### Request parameters
 
@@ -314,7 +314,7 @@ content-type: application/json
 
 List a Crawl's child Crawls. These are created automatically when validating external links. Pro edition only.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/pro/isoxya-api-list-crawl-crawl  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/pro/isoxya-api-list-crawl-crawl  
 
 ### Response parameters
 

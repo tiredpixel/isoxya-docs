@@ -12,7 +12,7 @@ Sites are websites, such as might be crawled. Sites must be registered within th
 
 Create a Site.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-create-site  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-create-site  
 
 ### Request parameters
 
@@ -63,7 +63,7 @@ location: /site/aHR0cDovL2V4YW1wbGUuY29tOjgw
 
 Read a Site.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-read  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-read  
 
 ### Response parameters
 

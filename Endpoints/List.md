@@ -15,7 +15,7 @@ Lists are lists of Pages within a [Site](Site.md). Lists can be used to start a 
 
 Delete a List. Pro edition only.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-delete  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-delete  
 
 ### Response example
 
@@ -28,7 +28,7 @@ HTTP/1.1 204 No Content
 
 Read a List. Pro edition only.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-read  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-read  
 
 ### Response parameters
 
@@ -65,7 +65,7 @@ content-type: application/json
 
 List a [Crawl's](Crawl.md) Lists. These are created automatically when validating external links. Pro edition only.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/pro/isoxya-api-list-crawl-list  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/pro/isoxya-api-list-crawl-list  
 
 ### Response parameters
 
@@ -100,7 +100,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/crawl/2021-12-16T16:16:55.511303Z/list
 
 List Lists. Pro edition only.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/pro/isoxya-api-list-list  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/pro/isoxya-api-list-list  
 
 ### Response parameters
 
@@ -135,7 +135,7 @@ link: </site/aHR0cDovL2V4YW1wbGUuY29tOjgw/list>; rel="first", </site/aHR0cDovL2V
 
 Create a List. Pro edition only.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/pro/isoxya-api-create-list  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/pro/isoxya-api-create-list  
 
 ### Request parameters
 

@@ -9,7 +9,7 @@ Isoxya is an extensible data processing system for crawling and scraping the int
 
 https://www.isoxya.com/  
 https://hub.docker.com/r/isoxya/isoxya-api  
-https://github.com/isoxya/isoxya-api  
+https://github.com/tiredpixel/isoxya-api  
 
 
 ## Isoxya Pro

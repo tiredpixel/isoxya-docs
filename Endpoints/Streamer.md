@@ -14,7 +14,7 @@ Streamers are plugins which send extracted data elsewhere. Streamers must be reg
 
 List Streamers.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-list-streamer  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-list-streamer  
 
 ### Response parameters
 
@@ -44,7 +44,7 @@ link: </streamer>; rel="first", </streamer?_next=2021-12-16T14:20:42.418362Z>; r
 
 Create a Streamer.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-create-streamer  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-create-streamer  
 
 ### Request parameters
 
@@ -95,7 +95,7 @@ location: /streamer/b49fcc24-6562-415a-94a6-3e8dcd848aac
 
 Delete a Streamer.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-delete  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-delete  
 
 ### Response example
 
@@ -108,7 +108,7 @@ HTTP/1.1 204 No Content
 
 Read a Streamer.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/isoxya-api-read  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/isoxya-api-read  
 
 ### Response parameters
 

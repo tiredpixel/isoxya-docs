@@ -11,7 +11,7 @@ ListPages are Pages within a [List](List.md), within a [Site](Site.md). Using th
 
 Insert one or more Pages into a [List](List.md). `urls` are normalised and deduplicated, after which any not matching the [List's](List.md) [Site](Site.md) are discarded. Pro edition only.
 
-https://github.com/isoxya/isoxya-api/blob/latest/bin/pro/isoxya-api-create-list  
+https://github.com/tiredpixel/isoxya-api/blob/latest/bin/pro/isoxya-api-create-list  
 
 ### Request parameters
 
